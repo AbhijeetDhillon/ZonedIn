@@ -1,0 +1,33 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">#16181D</item>
+        <item name="colorPrimaryDark">#16181D</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style		name="HiUsername" >
+        <item name="android:fontFamily" tools:targetApi="jelly_bean">Montserrat</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:textStyle">bold</item>	</style>
+
+    <style		name="Lorem">
+        <item name="android:fontFamily" tools:targetApi="jelly_bean">Montserrat</item>
+        <item name="android:textColor">#E9E9E9</item>
+    </style>
+
+    <style		name="DisableNotification"	>
+        <item name="android:fontFamily" tools:targetApi="jelly_bean">Poppins</item>
+        <item name="android:textColor">#FFFFFF</item>
+    </style>
+
+    <style name="GameMode">
+        <item name="android:fontFamily" tools:targetApi="jelly_bean">@font/poppins</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:textSize">24sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+</resources>
