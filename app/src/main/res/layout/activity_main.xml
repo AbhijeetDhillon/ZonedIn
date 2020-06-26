@@ -101,7 +101,8 @@
            android:layout_below="@+id/textGameMode"
            android:layout_width="wrap_content"
            android:layout_height="wrap_content"
-           android:layout_margin="20dp"/>
+           android:layout_margin="20dp"
+           style="@style/SwitchTheme"/>
 
 
         </RelativeLayout>
@@ -149,7 +150,9 @@
                         />
 
                     <Switch
+                        android:id="@+id/sleepModeSwitch"
                         android:layout_below="@+id/sleepMode"
+                        style="@style/SwitchTheme"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_margin="20dp"/>
@@ -168,8 +171,10 @@
         </RelativeLayout>
 
         <RelativeLayout
+            android:id="@+id/customMode"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:onClick="Custom">
 
             <ImageView
                 android:layout_width="wrap_content"
@@ -203,10 +208,10 @@
                 </RelativeLayout>
 
                 <ImageView
-                    android:layout_alignParentRight="true"
+                    android:layout_alignParentLeft="true"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:src="@drawable/astronaut"
+                    android:src="@drawable/caution"
                     />
 
             </RelativeLayout>

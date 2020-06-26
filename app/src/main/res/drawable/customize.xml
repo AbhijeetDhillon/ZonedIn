@@ -16,7 +16,7 @@
                 android:width="327px" />
         </shape>
     </item>
-    <item android:top="-10dp" android:left="20dp" android:right="230dp" android:bottom="50dp">
+    <item android:top="-10dp" android:left="20dp" android:right="250dp" android:bottom="70dp">
         <shape
             android:shape="oval"
             xmlns:android="http://schemas.android.com/apk/res/android">
