@@ -29,7 +29,7 @@ public class Notifications extends NotificationListenerService {
 
         final String packageName = sbn.getPackageName();
         sharedPreferences = getSharedPreferences(MainActivity.MyPREFERENCES,Context.MODE_PRIVATE);
-        if(sharedPreferences!=null && sharedPreferences.getBoolean("sleepModeOn",false) && !packageName.contains("com.karmatech")){
+        if(sharedPreferences!=null && (sharedPreferences.getBoolean("sleepModeOn",false) || sharedPreferences.getBoolean("gameModeOn",false)) && !packageName.contains("com.karmatech")){
 
             set = new HashSet<>();
             set.add(packageName);
