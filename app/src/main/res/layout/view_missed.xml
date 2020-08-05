@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:layout_margin="20dp"
+    android:background="#16181D">
+
+    <TextView	android:gravity="center"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        style="@style/Customize"
+        android:text="See What You've Missed"
+        android:layout_margin="10dp"
+        android:textSize="20sp"
+        />
+
+    <TextView
+        android:id="@+id/warning"
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        style="@style/Customize"
+        android:gravity="center"
+        android:text="Check the calls &amp; notification you missed while you've been away"
+        />
+
+    <TextView
+        android:id="@+id/next"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text="CONTINUE"
+        android:gravity="center"
+        style="@style/Customize"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/white_highlighter"
+        />
+    <TextView
+        android:id="@+id/close"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:layout_marginTop="10dp"
+        android:text="CLOSE"
+        android:gravity="center"
+        style="@style/Customize"
+
+        />
+
+</LinearLayout>

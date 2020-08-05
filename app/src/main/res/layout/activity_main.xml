@@ -9,7 +9,7 @@
     >
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:background="#16181D">
     <ImageView
         android:layout_width="wrap_content"
@@ -19,19 +19,29 @@
        />
 
 
+    <RelativeLayout
+        android:id="@+id/Disable"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+
     <LinearLayout
         android:id="@+id/enableDisable"
         android:orientation="horizontal"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="match_parent"
         android:layout_marginTop="50dp"
+
         >
 
 
         <TextView
+            android:id="@+id/callsEnabled"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Enable \n Calls"
+            android:text="Calls\nEnabled"
+            android:textColor="#FF888888"
             style="@style/DisableNotification"
             android:textSize="20sp"
             android:gravity="center"
@@ -43,10 +53,12 @@
             android:background="@drawable/disable"/>
 
         <TextView
+            android:id="@+id/notificationEnabled"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Disable\nNotifications"
+            android:text="Notifications\nEnabled"
             style="@style/DisableNotification"
+            android:textColor="#FF888888"
             android:textSize="20sp"
             android:gravity="center"
             android:layout_marginRight="20dp"
@@ -58,12 +70,58 @@
 
     </LinearLayout>
 
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="50dp"
+            >
+
+
+            <TextView
+                android:id="@+id/callsDisabled"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Calls\nDisabled"
+                android:textColor="#FFFFFF"
+                style="@style/DisableNotification"
+                android:textSize="20sp"
+                android:gravity="center"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:paddingTop="40dp"
+                android:paddingBottom="40dp"
+                android:layout_weight="1"
+                android:background="@drawable/enabled"
+                android:visibility="invisible"/>
+
+            <TextView
+                android:id="@+id/notificationDisabled"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Notifications\nDisabled"
+                style="@style/DisableNotification"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp"
+                android:gravity="center"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:paddingTop="40dp"
+                android:paddingBottom="40dp"
+                android:layout_weight="1"
+                android:background="@drawable/enabled"
+                android:visibility="invisible"/>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
     <LinearLayout
         android:orientation="vertical"
         android:layout_margin="20dp"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_below="@+id/enableDisable">
+        android:layout_below="@+id/Disable">
 
         <RelativeLayout
             android:layout_width="match_parent"
@@ -91,7 +149,7 @@
             android:id="@+id/textGameMode"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Game &amp; Movie\nMode"
+            android:text="Game, Movie\n&amp; Focus Mode"
             android:padding="20dp"
             android:textSize="20sp"
             style="@style/GameMode"

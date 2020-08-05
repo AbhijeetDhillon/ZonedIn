@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MissedCallsNotifications"
+    android:orientation="vertical"
+    android:background="#16181D">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+        <TextView
+            android:id="@+id/missedNotifications"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Notifications"
+            style="@style/Customize"
+            android:textAlignment="center"
+            android:background="@drawable/highlighter"
+            android:layout_margin="20dp"
+            android:padding="3dp"
+            android:textSize="21sp"
+            android:onClick="missedNotification">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/missedCalls"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Calls"
+            style="@style/Customize"
+            android:background="@drawable/highlighter"
+            android:layout_margin="20dp"
+            android:padding="3dp"
+            android:textAlignment="center"
+            android:textSize="21sp"
+            android:onClick="missedCalls"
+            >
+
+        </TextView>
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/frameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+
+</LinearLayout>
